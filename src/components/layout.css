@@ -51,7 +51,7 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
+  background-color: `979797`;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
