@@ -19,18 +19,18 @@ export default () => (
   />
 )
 
-const ElementPage = ({ data }) => (
+const ElementList = ({ data }) => (
   <Layout>
     <SEO title="Element List" />
     <ul>
       {data.allElementsCsv.nodes.length > 0 &&
-        data.allElementsCsv.nodes.map(person => (
+        data.allElementsCsv.nodes.map(element => (
           <li>
-            <Link to={`${person.FirstName}-${person.LastName}`}>
-              {person.FirstName}
-            </Link>
+            {element.Name}
           </li>
         ))}
     </ul>
   </Layout>
 )
+
+export default ElementList

@@ -37,7 +37,7 @@
          path: slug,
          component: elementTemplate,
          context: {
-           ...person,
+           ...element,
          },
        })
      })
