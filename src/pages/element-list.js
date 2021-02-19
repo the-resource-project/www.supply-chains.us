@@ -9,8 +9,10 @@ export default () => (
     query={graphql`
       query AllElements {
         elementsCsv {
-          nodes {
+          edges {
+            node {
             ...ElementsCsvFragment
+            }
           }
         }
       }
@@ -26,6 +28,9 @@ const ElementList = ({ data }) => (
       {data.allElementsCsv.nodes.length > 0 &&
         data.allElementsCsv.nodes.map(element => (
           <li>
+            {element.Name}
+            {element.Name}
+            {element.Name}
             {element.Name}
           </li>
         ))}

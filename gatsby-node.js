@@ -15,10 +15,10 @@
        query AllElements {
          allElementsCsv {
            nodes {
-             Name
              Image
              Location
              Map
+             Name
              Use
            }
          }
@@ -26,6 +26,7 @@
      `
    ).then(result => {
      if (result.errors) {
+       console.log('hello world')
        throw result.errors
      }
 

@@ -5,7 +5,7 @@ import "../layout.css"
 
 const Layout = props => {
   const {
-    pageContext: { Name, Image, Location, Map, Use },
+    pageContext: { Image, Location, Map, Name, Use },
   } = props
 
   return (
