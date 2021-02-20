@@ -4,20 +4,27 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Header from "../components/header"
+import Footer from "../components/footer"
+
 export default () => (
   <StaticQuery
-    query={graphql`
-      query AllElements {
-        elementsCsv {
-          edges {
-            node {
-            ...ElementsCsvFragment
+    query={graphql
+      `
+        query AllElements {
+          allElementsCsv {
+            nodes {
+              Image
+              Location
+              Map
+              Name
+              Use
             }
           }
         }
-      }
-    `}
-    render={data => <ElementPage data={data} />}
+      `
+    }
+  render={data => <ElementList data={data} />}
   />
 )
 
@@ -28,14 +35,11 @@ const ElementList = ({ data }) => (
       {data.allElementsCsv.nodes.length > 0 &&
         data.allElementsCsv.nodes.map(element => (
           <li>
-            {element.Name}
-            {element.Name}
-            {element.Name}
-            {element.Name}
+            <Link to={`/${element.Name}`}>{element.Name}</Link>
           </li>
         ))}
     </ul>
   </Layout>
 )
 
-export default ElementList
+// export default ElementList

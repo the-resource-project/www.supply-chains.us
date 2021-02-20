@@ -4,43 +4,46 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
- const path = require(`path`)
+const path = require(`path`)
 
- exports.createPages = ({ graphql, actions }) => {
-   const { createPage } = actions
-   const elementTemplate = path.resolve(`src/components/templates/elements.jsx`)
+exports.createPages = ({ graphql, actions }) => {
+ const { createPage } = actions
+ const elementTemplate = path.resolve(`src/components/templates/elements.jsx`)
 
-   return graphql(
-     `
-       query AllElements {
-         allElementsCsv {
-           nodes {
-             Image
-             Location
-             Map
-             Name
-             Use
-           }
+ return graphql(
+   `
+     query AllElements {
+       allElementsCsv {
+         nodes {
+           Image
+           Location
+           Map
+           Name
+           Use
          }
        }
-     `
-   ).then(result => {
-     if (result.errors) {
-       console.log('hello world')
-       throw result.errors
      }
+   `
+ ).then(result => {
+   if (result.errors) {
+     console.log('error in querying data')
+     throw result.errors
+   }
+   // console.log('data query:' + JSON.stringify(result))
 
-     // Create people  pages.
-     result.data.allElementsCsv.nodes.forEach(element => {
-       const slug = element.Name
+   // Creates pages for each element
+   result.data.allElementsCsv.nodes.forEach(element => {
+     // console.log('inside forEach')
+     const slug = element.Name
+     console.log(slug)
 
-       createPage({
-         path: slug,
-         component: elementTemplate,
-         context: {
-           ...element,
-         },
-       })
+     createPage({
+       path: slug,
+       component: elementTemplate,
+       context: {
+         ...element,
+       },
      })
    })
- }
+ })
+}
