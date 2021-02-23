@@ -1,35 +1,31 @@
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      // background: `979797`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `4a4a4a`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = () => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+  const siteTitle = data.site.siteMetadata.title
+
+  return (
+    <>
+    <header>
+        <h5>
+          <Link to="/">
+            {siteTitle}
+          </Link>
+        </h5>
+    </header>
+    </>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

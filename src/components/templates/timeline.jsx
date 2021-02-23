@@ -11,7 +11,7 @@ const Layout = props => {
     pageContext: { Image, Location, Map, Name, Use },
   } = props
 
-  console.log('in elements.jsx page')
+  console.log('in timeline.jsx page')
 
   return (
     <>
@@ -26,13 +26,7 @@ const Layout = props => {
         }}
       >
         <main>
-          <img src={Image} />
-          <h1>
-            {Name}
-          </h1>
-          <p>Source: {Location}</p>
-          <img src={Map} />
-          <p>{Use}</p>
+          timeline goes here
         </main>
         <Footer />
       </div>
