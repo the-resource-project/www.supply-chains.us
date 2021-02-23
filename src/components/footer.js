@@ -7,17 +7,18 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 
 import "./layout.css"
 
 const Footer = () => (
   <footer>
-    © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.org">Gatsby</a>.<br/>
-    <Link to="/">Go home</Link>.
   </footer>
 )
 
 export default Footer
+
+// <h5><Link to="/element-list/">Go back</Link></h5>
+// © {new Date().getFullYear()}, Built with
+// {` `}
+// <a href="https://www.gatsbyjs.org">Gatsby</a>.
