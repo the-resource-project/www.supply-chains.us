@@ -30,7 +30,7 @@ export default () => (
 const ElementList = ({ data }) => (
   <Layout>
     <SEO title="Element List" />
-    <ul>
+    <ul class="element-list">
       {data.allElementsCsv.nodes.length > 0 &&
         data.allElementsCsv.nodes.map(element => (
           <li>

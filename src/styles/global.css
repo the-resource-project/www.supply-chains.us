@@ -21,4 +21,17 @@ main {
 }
 
 div {
+  .element-list{
+    padding: 0rem 2rem;
+  }
+}
+
+timeline-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+  .child {
+    display: inline-block;
+  }
 }
