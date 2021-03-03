@@ -13,7 +13,7 @@ import styles from "../styles/layout.css"
 
 const Footer = () => (
   <footer>
-    © {new Date().getFullYear()}, Built with Gatsby. Creative Commons by Anne Lee Steele and Miriam Matthieson.
+    © {new Date().getFullYear()}, Built with Gatsby. Creative Commons by Anne Lee Steele and Miriam Matthiessen.
   </footer>
 )
 
