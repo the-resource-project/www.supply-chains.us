@@ -47,7 +47,8 @@ function Countdown() {
     <div>
       <h3>Time Until MozFest 2021</h3>
       {timerComponents.length ? timerComponents : <span>Time for MozFest!</span>}<br/><br/>
-      <h4>Check back on March 8!</h4>
+      <h4>Check back on March 8 to see the exhibit.</h4>
+      <h5><a href="https://pretalx.com/mozfest-2021/talk/AK3TFM/">Sign up for our discussion session</a></h5>
     </div>
   );
 }
