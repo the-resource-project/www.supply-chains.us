@@ -1,3 +1,11 @@
+/**
+ *
+ * Styles for global styles
+ *
+ */
+
+/* Main elements */
+
 html {
   background-color: d8d8d8;
   text-align: center;
@@ -6,6 +14,7 @@ html {
 
 body {
   font-family: avenir next, sans-serif;
+  color: #4a4a4a;
   width: 100%;
   margin: auto;
   top: 50%;
@@ -13,25 +22,40 @@ body {
 
 header, footer {
   padding: 1.5rem 2rem;
+  font-size: 10px; /* need to add calc here */
 }
 
 main {
   text-align: center;
   margin: auto;
+  height: auto;
 }
 
-div {
-  .element-list{
-    padding: 0rem 2rem;
-  }
+/* Styles for visual elements  */
+
+img {
+  /* max-width: 200px; */
 }
 
-timeline-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+/* Styles for lists */
 
-  .child {
-    display: inline-block;
-  }
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+}
+
+/* Links */
+
+a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: width 2s;
+  opacity: 0.1;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }

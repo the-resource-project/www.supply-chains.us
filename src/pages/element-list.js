@@ -4,7 +4,7 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import styles from "../styles/element-list.css"
+import styles from "../styles/list.css"
 
 export default () => (
   <StaticQuery
@@ -30,15 +30,17 @@ export default () => (
 const ElementList = ({ data }) => (
   <Layout>
     <SEO title="Element List" />
-    <ul class="element-list">
-      {data.allElementsCsv.nodes.length > 0 &&
-        data.allElementsCsv.nodes.map(element => (
-          <li>
-            <Link to={`/${element.Name}`}>{element.Name}</Link>
-          </li>
-        ))}
-    </ul>
+    <div class="element-list-div-wrapper">
+      <div class="element-list-subwrapper">
+        <ul class="element-list-ul">
+          {data.allElementsCsv.nodes.length > 0 &&
+            data.allElementsCsv.nodes.map(element => (
+              <li class="element-list-li">
+                <h2><Link to={`/${element.Name}`}>{element.Name}</Link></h2>
+              </li>
+            ))}
+        </ul>
+      </div>
+    </div>
   </Layout>
 )
-
-// export default ElementList

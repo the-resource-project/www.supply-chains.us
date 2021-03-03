@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 
 import Header from "./header"
 import Footer from "./footer"
-import "./layout.css"
+import styles from "../styles/layout.css"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   console.log('in layout')
   return (
     <>
-      <div class="body">
+      <div className="body">
         <Header />
 
         <main>{children}</main>

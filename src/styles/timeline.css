@@ -1,0 +1,44 @@
+/**
+ *
+ * Styles for timeline elements
+ *
+ */
+
+.timeline {
+  font-size: 11px;
+}
+
+.timeline-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.timeline-child {
+  display: inline-block;
+}
+
+.x {
+  animation: x 13s linear infinite alternate;
+}
+
+.y {
+  animation: y 7s linear infinite alternate;
+}
+
+.timeline-image {
+  max-width: 8rem;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX( calc(100vw - #{$size}) );
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY( calc(100vh - #{$size}) );
+  }
+}
