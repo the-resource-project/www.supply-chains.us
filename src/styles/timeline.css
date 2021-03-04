@@ -11,12 +11,14 @@
 .timeline-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
+  min-height: 100%;
   white-space: nowrap;
-  height: 100%;
 }
 
 .timeline-child {
   display: inline-block;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .x {
