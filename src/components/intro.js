@@ -12,17 +12,17 @@ export default function Intro() {
   //   this.state = { show: false };
   //   this.handleClick = this.handleClick.bind(this);
   // }
-  console.log('inside intro');
-  const [faded, setFade] = useState(false);
+  // console.log('inside intro');
+  // const [faded, setFade] = useState(false);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      console.log('inside useEffect');
-      window.addEventListener("scroll", () =>
-        setFade(window.pageYOffset > 200)
-      );
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     console.log('inside useEffect');
+  //     window.addEventListener("scroll", () =>
+  //       setFade(window.pageYOffset > 200)
+  //     );
+  //   }
+  // }, []);
 
   return (
     <>
