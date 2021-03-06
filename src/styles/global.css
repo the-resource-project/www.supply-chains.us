@@ -7,7 +7,7 @@
 /* Main elements */
 
 html {
-  background-color: d8d8d8;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   text-align: center;
   width: 100%;
 }

@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 
 import RawImg from "../images/raw-material.png"
 import TransImg from "../images/transport.png"
+import SNRImg from "../images/s&r.png"
 
 import TimelineNode from "../components/timeline-components/timeline-node"
 
@@ -40,7 +41,7 @@ const Timeline = ({ data }) => (
     <div className="timeline-wrapper">
       <div className="timeline-child raw-materials"><img src={RawImg} alt="raw material collage" /></div>
       <div className="timeline-child transport"><img src={TransImg} alt="transport collage" /></div>
-      <div className="timeline-child smelting-refining">Smelting & Refining</div>
+      <div className="timeline-child smelting-refining"><img src={SNRImg} alt="smelting & refining collage" /></div>
       <div className="timeline-child transport"><img src={TransImg} alt="transport collage" /></div>
       <div className="timeline-child manufacturing">Manufacturing</div>
       <div className="timeline-child transport"><img src={TransImg} alt="transport collage" /></div>

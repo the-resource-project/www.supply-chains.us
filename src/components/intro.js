@@ -37,7 +37,7 @@ export default function Intro() {
         <Fade top fraction={0.9} duration={2000}><h2 className="intro">At the same time, discussions about the human rights implications of the supply chain tend to remove agency from the people within it. Lives within the supply chain are varied – but this tends to get lost in homogenous descriptions about what they are.</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={0.9} duration={2000}><h2 className="intro">This project plays two roles. The first is to introduce you to information you might not know about supply chains, and give you the facts. The second is to collect the narratives within it, and show you .
+        <Fade top fraction={0.9} duration={2000}><h2 className="intro">This project plays three roles. The first is to introduce you to information you might not know about supply chains, and tries to give you the facts. The second is to collect the narratives within it, and show you stories that people have written about the people within these processes, that often get lost during the news cycle.
         </h2></Fade>
       </div>
       <div className="intro-child">
