@@ -8,6 +8,10 @@ import SEO from "../components/seo"
 import RawImg from "../images/raw-material.png"
 import TransImg from "../images/transport.png"
 import SNRImg from "../images/s&r.png"
+import ManuImg from "../images/manufacturing.png"
+import EndProdImg from "../images/end-product.png"
+import RecImg from "../images/recycling.png"
+import WasteImg from "../images/waste.png"
 
 import TimelineNode from "../components/timeline-components/timeline-node"
 
@@ -43,12 +47,11 @@ const Timeline = ({ data }) => (
       <div className="timeline-child transport"><img src={TransImg} alt="transport collage" /></div>
       <div className="timeline-child smelting-refining"><img src={SNRImg} alt="smelting & refining collage" /></div>
       <div className="timeline-child transport"><img src={TransImg} alt="transport collage" /></div>
-      <div className="timeline-child manufacturing">Manufacturing</div>
+      <div className="timeline-child manufacturing"><img src={ManuImg} alt="manufacturing collage" /></div>
       <div className="timeline-child transport"><img src={TransImg} alt="transport collage" /></div>
-      <div className="timeline-child end-product">End Product</div>
-      <div className="timeline-child disposal">Disposal</div>
-      <div className="timeline-child recycling">Recycling</div>
-      <div className="timeline-child waste">Waste</div>
+      <div className="timeline-child end-product"><img src={EndProdImg} alt="end product collage" /></div>
+      <div className="timeline-child recycling"><img src={RecImg} alt="recycling collage" /></div>
+      <div className="timeline-child waste"><img src={WasteImg} alt="waste collage" /></div>
     </div>
   </Layout>
 )

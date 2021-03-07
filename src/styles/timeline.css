@@ -4,6 +4,11 @@
  *
  */
 
+img, div {
+   width: $size;
+   height: $size;
+ }
+
 .timeline {
   font-size: 11px;
 }
@@ -24,26 +29,6 @@
   opacity: 50%;
 }
 
-.x {
-  animation: x 13s linear infinite alternate;
-}
-
-.y {
-  animation: y 7s linear infinite alternate;
-}
-
 .timeline-image {
   max-width: 8rem;
-}
-
-@keyframes x {
-  100% {
-    transform: translateX( calc(100vw - #{$size}) );
-  }
-}
-
-@keyframes y {
-  100% {
-    transform: translateY( calc(100vh - #{$size}) );
-  }
 }
