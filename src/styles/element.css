@@ -15,6 +15,10 @@
   border: 1px;
 }
 
+.element-indiv-name {
+  font-size: 10rem; 
+}
+
 .element-indiv-use {
   max-width: 3rem;
 }

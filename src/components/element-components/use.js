@@ -9,7 +9,7 @@ import styles from "../../styles/element.css"
 
 const Use = ({elementUse}) => (
   <div className="element-indiv">
-    <p className="element-indiv-use">{Use}</p>
+    <p className="element-indiv-use">{elementUse}</p>
   </div>
 )
 
