@@ -1,0 +1,17 @@
+/**
+ *
+ * Styles for list of elements
+ *
+ */
+
+.element-list-div-wrapper {
+  width: 100%;
+}
+
+.element-list-div-subwrapper {
+
+}
+
+.element-list-li {
+  padding: 1rem;
+}

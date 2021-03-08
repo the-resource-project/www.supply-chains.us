@@ -8,12 +8,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
+import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions"
 
-import Header from "./header"
-import Footer from "./footer"
-import "./layout.css"
+import Header from "../components/header"
+import Footer from "../components/footer"
+import styles from "../styles/layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ location, children }) => {
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
   //     site {
@@ -27,13 +28,17 @@ const Layout = ({ children }) => {
   console.log('in layout')
   return (
     <>
-      <div class="body">
-        <Header />
-
-        <main>{children}</main>
-
-        <Footer />
+    <Header />
+      <div className="body">
+        <main>
+        <TransitionProvider location={location}>
+        <TransitionViews>
+        {children}
+        </TransitionViews>
+        </TransitionProvider>
+        </main>
       </div>
+      <Footer/>
     </>
   )
 }

@@ -1,18 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
+import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import Countdown from '../components/countdown.js'
-import ElementList from './element-list.js'
+import Intro from '../components/intro.js'
 
 const IndexPage = () => (
   // console.log('in indexpage')
-  <Layout>
+  <>
     <SEO title="Home" />
-    < Countdown />
-  </Layout>
+    < Intro />
+  </>
 )
 
 export default IndexPage

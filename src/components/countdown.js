@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "gatsby"
 
-import "./layout.css"
+import styles from "../styles/layout.css"
 
 function Countdown() {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    const difference = +new Date(`${year}-03-08`) - +new Date();
+    const difference = +new Date(`${year}-03-09`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -45,10 +45,7 @@ function Countdown() {
   });
   return (
     <div>
-      <h3>Time Until MozFest 2021</h3>
-      {timerComponents.length ? timerComponents : <span>Time for MozFest!</span>}<br/><br/>
-      <h4>Check back on March 8 to see the exhibit.</h4>
-      <h5><a href="https://pretalx.com/mozfest-2021/talk/AK3TFM/">Sign up for our discussion session</a></h5>
+      {timerComponents.length ? timerComponents : <span>Explore with us.</span>}<br/><br/>
     </div>
   );
 }

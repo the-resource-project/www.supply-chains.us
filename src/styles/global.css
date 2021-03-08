@@ -1,11 +1,33 @@
+/**
+ *
+ * Styles for global styles
+ *
+ */
+
+/* Main elements */
+
 html {
-  background-color: d8d8d8;
+  background: linear-gradient(-45deg, #b09554, #b64e34, #547fb0, #54b06d);
   text-align: center;
   width: 100%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body {
   font-family: avenir next, sans-serif;
+  color: #4a4a4a;
   width: 100%;
   margin: auto;
   top: 50%;
@@ -13,12 +35,40 @@ body {
 
 header, footer {
   padding: 1.5rem 2rem;
+  font-size: 10px; /* need to add calc here */
 }
 
 main {
   text-align: center;
   margin: auto;
+  height: auto;
 }
 
-div {
+/* Styles for visual elements  */
+
+img {
+  /* max-width: 200px; */
+}
+
+/* Styles for lists */
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+}
+
+/* Links */
+
+a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: width 2s;
+  opacity: 0.1;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
 }

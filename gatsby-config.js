@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `www.supply-chains.us`,
     description: `supply-chains.us is a living archive of the geographies, processes, and people behind modern supply chains, particularly those required to make consumer technology.`,
-    author: `@anneleesteele`,
+    author: `@aleesteele`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,7 +22,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/link.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -40,6 +40,13 @@ module.exports = {
       },
     },
     `gatsby-transformer-csv`,
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`${__dirname}/src/components/layout`)
+      },
+    },
+    `gatsby-plugin-transition-link`
   ]
 }

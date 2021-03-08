@@ -1,18 +1,19 @@
 /**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
  *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
+ *
+ * Footer
+ *
  */
 
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import "./layout.css"
+import styles from "../styles/layout.css"
 
 const Footer = () => (
   <footer>
+    © {new Date().getFullYear()}, ALS & MM. Check our sources here.
   </footer>
 )
 
