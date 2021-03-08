@@ -57,7 +57,7 @@ export default function Intro() {
         <Fade top fraction={1} duration={2000}><h2 className="intro">Please note: this project will be updated daily, and is best viewed on a desktop computer.</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={1} duration={2000}><h2 className="intro">To explore the supply chain, check back tomorrow.<br/><br/>Time until next release: <Countdown /></h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">To explore the supply chain, check back soon.<br/><br/>Time until next release: <Countdown /></h2></Fade>
       </div>
     </div>
     </>
