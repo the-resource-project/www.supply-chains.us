@@ -42,16 +42,16 @@ export default function Intro() {
         <Fade top fraction={1} duration={2000}><h2 className="intro">Yet, these processes invariably depend on labour that is often tedious and slow, and carried out under precarious and hazardous conditions.</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={1} duration={2000}><h2 className="intro">At the same time, while many journalists have reported on supply chain working conditions, they sometimes end up reproducing the dominant narratives surrounding these processes.</h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">While many journalists have reported on supply chain working conditions, they sometimes end up reproducing the dominant narratives surrounding these processes.</h2></Fade>
       </div>
       <div className="intro-child">
         <Fade top fraction={1} duration={2000}><h2 className="intro">Such narratives center the consumer of a marketed end product, forgetting that the electronic supply chain doesn’t stop with the consumer at all...</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={1} duration={2000}><h2 className="intro">...but continues on into recycling centers, with salvagers, and at e-waste sites around the world.</h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">...but continues on into recycling centers, with salvagers, and at e-waste sites around the world...</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={1} duration={2000}><h2 className="intro">They remind us that words like ‘end consumer’ and ‘end product’ are situated, and offer only a partial perspective of consumer technology life cycles.</h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">...Reminding us that words like ‘end consumer’ and ‘end product’ are situated, and offer only a partial perspective of consumer technology life cycles.</h2></Fade>
       </div>
       <div className="intro-child">
         <Fade top fraction={1} duration={2000}><h2 className="intro">They beg the questions: end consumer of what and end product for whom?</h2></Fade>
