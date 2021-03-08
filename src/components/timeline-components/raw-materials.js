@@ -11,9 +11,9 @@ export default function RawMaterials() {
     <>
     <div className="timeline-child raw-materials-div"
       style={{
-      backgroundImage: `url("{RawImg}")`
-      }}>
-      <img src={RawImg} alt="raw materials collage" />
+      backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615181142/raw-material_iyuaky.png')`
+    }}>
+    Hello
     </div>
     </>
   );

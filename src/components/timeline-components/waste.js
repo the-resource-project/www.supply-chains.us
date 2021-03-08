@@ -8,8 +8,10 @@ export default function Waste() {
 
   return (
     <>
-    <div className="timeline-child waste-div">
-      <img src={WasteImg} alt="waste collage" />
+    <div className="timeline-child waste-div"
+    style={{
+      backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615180510/waste_bu4wpv.png')`
+    }}>
     </div>
     </>
   );

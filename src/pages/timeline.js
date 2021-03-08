@@ -1,8 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import RawMaterials from "../components/timeline-components/raw-materials"
@@ -16,7 +13,7 @@ import Waste from "../components/timeline-components/waste"
 import styles from "../styles/timeline.css"
 
 const Timeline = () => (
-  <Layout>
+  <>
     <SEO title="Timeline" />
     <div className="timeline-wrapper">
       <RawMaterials />
@@ -29,7 +26,7 @@ const Timeline = () => (
       <Recycling />
       <Waste />
     </div>
-  </Layout>
+  </>
 )
 
 export default Timeline

@@ -8,8 +8,10 @@ export default function Transport() {
 
   return (
     <>
-    <div className="timeline-child transport-div">
-      <img src={TransImg} alt="transport collage" />
+    <div className="timeline-child transport-div"
+    style={{
+      backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615180503/transport_lzkjbw.png')`
+    }}>
     </div>
     </>
   );

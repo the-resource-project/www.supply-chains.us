@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-
 import Fade from 'react-reveal/Fade'
+import TransitionLink from "gatsby-plugin-transition-link"
+
+import Countdown from './countdown'
 
 import styles from '../styles/intro.css'
 
@@ -28,24 +30,34 @@ export default function Intro() {
     <>
     <div className="intro-wrapper">
       <div className="intro-child" >
-        <Fade top delay={1500} fraction={0.8} duration={2000}><h2 className="intro">50 elements are used in 98% of all electronic devices, from consumer devices to computers, from solar panels to electric cars. These elements are often extracted in precarious conditions or through forced labor, and in some of the world’s poorest nations (at least according to GDP).</h2></Fade>
+        <Fade top delay={1500} fraction={0.9} duration={2000}><h2 className="intro">50 elements are used in 98% of all electronic devices, from consumer cell phones to computers, to solar panels and electric cars. </h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={0.9} duration={2000}><h2 className="intro">While many journalists have reported on these conditions, the rest of the supply chain often remains invisible to the average consumer. Modern design and project management has meant that most of these people and processes appear seemless, and are abstracted away.</h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">As we head towards an ever more digital future, we are becoming increasingly more dependent on extractive and global processes to support it.</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={0.9} duration={2000}><h2 className="intro">At the same time, discussions about the human rights implications of the supply chain tend to remove agency from the people within it. Lives within the supply chain are varied – but this tends to get lost in homogenous descriptions about what they are.</h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">These processes are often precarious and dangerous for the people contained within them. But more often than not, they are simply invisible to the everyday consumer.</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={0.9} duration={2000}><h2 className="intro">This project plays three roles. The first is to introduce you to information you might not know about supply chains, and tries to give you the facts. The second is to collect the narratives within it, and show you stories that people have written about the people within these processes, that often get lost during the news cycle.
-        </h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">For many of us, the supply chain feels both totally seamless and completely abstract.</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={0.9} duration={2000}><h2 className="intro">Ultimately, this project seeks to bridge the gap between the statistical and the emotional, between the factual and the emotive. It tries to remind you that behind every computer, every iPhone, every clock – are people – distributed across the world.
-        </h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">At the same time, while journalists and others have written about the working conditions of the supply chain, they sometimes forget that the people within it are not voiceless...</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={1} duration={2000}><h2 className="intro"><Link to="/timeline/">Explore the supply chain</Link></h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">...And that the electronic supply chain doesn’t stop with the consumer at all, but continues on into recycling centers, with salvagers, and at e-waste sites around the world.</h2></Fade>
+      </div>
+      <div className="intro-child">
+        <Fade top fraction={1} duration={2000}><h2 className="intro">These steps — these social lives — of the supply chain usually remain invisible to us.</h2></Fade>
+      </div>
+      <div className="intro-child">
+        <Fade top fraction={1} duration={2000}><h2 className="intro">supply-chains.us is a living archive that traces these uneven geographies, extractive processes, and the forgotten labour that produces our digital life.</h2></Fade>
+      </div>
+      <div className="intro-child">
+        <Fade top fraction={1} duration={2000}><h2 className="intro">Please note: this project will be updated daily, and is best viewed on a desktop computer.</h2></Fade>
+      </div>
+      <div className="intro-child">
+        <Fade top fraction={1} duration={2000}><h2 className="intro">To explore the supply chain, check back tomorrow.<br/><br/>Time until next release: <Countdown /></h2></Fade>
       </div>
     </div>
     </>

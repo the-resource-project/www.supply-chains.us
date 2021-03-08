@@ -8,8 +8,11 @@ export default function Recycling() {
 
   return (
     <>
-    <div className="timeline-child smelting-refining-div">
-      <img src={RecImg} alt="smelting and refining collage" />
+    <div className="timeline-child smelting-refining-div"
+    style={{
+      backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615180574/recycling_ryggx5.png')`
+    }}>
+
     </div>
     </>
   );

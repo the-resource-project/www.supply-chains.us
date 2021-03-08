@@ -8,8 +8,11 @@ export default function SmeltRefine() {
 
   return (
     <>
-    <div className="timeline-child smelting-refining-div">
-      <img src={SNRImg} alt="smelting and refining collage" />
+    <div className="timeline-child smelting-refining-div"
+    style={{
+      backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615181028/s_r_vgajgb.png')`
+    }}>
+
     </div>
     </>
   );

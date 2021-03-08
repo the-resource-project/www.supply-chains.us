@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `www.supply-chains.us`,
     description: `supply-chains.us is a living archive of the geographies, processes, and people behind modern supply chains, particularly those required to make consumer technology.`,
-    author: `@anneleesteele`,
+    author: `@aleesteele`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,6 +40,13 @@ module.exports = {
       },
     },
     `gatsby-transformer-csv`,
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`${__dirname}/src/components/layout`)
+      },
+    },
+    `gatsby-plugin-transition-link`
   ]
 }

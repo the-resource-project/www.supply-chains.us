@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import styles from "../styles/list.css"
@@ -28,7 +27,7 @@ export default () => (
 )
 
 const ElementList = ({ data }) => (
-  <Layout>
+  <>
     <SEO title="Element List" />
     <div class="element-list-div-wrapper">
       <div class="element-list-subwrapper">
@@ -42,5 +41,5 @@ const ElementList = ({ data }) => (
         </ul>
       </div>
     </div>
-  </Layout>
+  </>
 )
