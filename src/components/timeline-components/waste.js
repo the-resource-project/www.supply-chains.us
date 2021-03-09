@@ -2,7 +2,7 @@ import React from "react"
 
 import WasteImg from "../../images/waste.png"
 
-import styles from "../../styles/timeline.css"
+import styles from "../../styles/exhibit.css"
 
 export default function Waste() {
 

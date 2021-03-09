@@ -11,12 +11,12 @@ import EndProduct from "../components/timeline-components/end-product"
 import Recycling from "../components/timeline-components/recycling"
 import Waste from "../components/timeline-components/waste"
 
-import styles from "../styles/timeline.css"
+import styles from "../styles/exhibit.css"
 
 const Timeline = () => (
   <>
-    <SEO title="Timeline" />
-    <div className="timeline-wrapper">
+    <SEO title="Exhibit" />
+    <div className="exhibit-wrapper">
       <Guide />
       <RawMaterials />
       <Transport />

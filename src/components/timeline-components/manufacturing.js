@@ -2,7 +2,7 @@ import React from "react"
 
 import ManuImg from "../../images/manufacturing.png"
 
-import styles from "../../styles/timeline.css"
+import styles from "../../styles/exhibit.css"
 
 export default function Manufacturing() {
 

@@ -14,19 +14,63 @@ img, div {
 }
 
 .timeline-wrapper {
-  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 320px;
+  height: 200px;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* position:absolute;
+  display:block; */
+  /* top:0;
+  left:0; */
+  /* width:80px;
+  max-height:500px;
+  margin:0;
+  background:#abc;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg) translateY(-80px);
+  transform-origin:right top; */
+  /* overflow-x: scroll;
   overflow-y: hidden;
   min-height: 100%;
+  display: table;
   white-space: nowrap;
-  background-size: 400% 400%;
+  background-size: 400% 400%;*/
   animation: gradient 15s ease infinite;
 }
 
+.timeline-wrapper > div {
+  flex: 0 0 auto;
+  max-width: 320px;
+  height: 100%;
+  scroll-snap-align: start;
+  /* display:block;
+  padding:5px;
+  background:#cab;
+  transform:rotate(90deg);
+  transform-origin: right top; */
+}
+
 .timeline-child {
-  display: inline-block;
+  flex: 0 0 auto;
+  max-width: 320px;
+  height: 100%;
+  scroll-snap-align: start;
+  /* display: inline-block;
+  vertical-align:top;
   min-width: 100%;
   min-height: 100%;
-  opacity: 50%;
+  opacity: 50%; */
+}
+
+.timeline-child > div {
+  width:60px;
+  height:60px;
+  margin:10px;
 }
 
 .timeline-image {

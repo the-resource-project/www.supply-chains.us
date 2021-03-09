@@ -1,0 +1,35 @@
+/**
+ *
+ * Styles for timeline elements
+ *
+ */
+
+img, div {
+   width: $size;
+   height: $size;
+ }
+
+.exhibit {
+  font-size: 11px;
+}
+
+.exhibit-wrapper {
+  min-width: 100rem;
+  height: 100rem;
+}
+
+.exhibit-child {
+  width: 100%;
+}
+
+.exhibit-image {
+  max-width: 8rem;
+}
+
+.raw-materials {
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  x: 0;
+  y: 0;
+}

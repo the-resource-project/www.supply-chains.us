@@ -2,7 +2,7 @@ import React from "react"
 
 import EndProdImg from "../../images/end-product.png"
 
-import styles from "../../styles/timeline.css"
+import styles from "../../styles/exhibit.css"
 
 export default function EndProduct() {
 

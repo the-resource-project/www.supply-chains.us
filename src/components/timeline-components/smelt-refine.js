@@ -2,7 +2,7 @@ import React from "react"
 
 import SNRImg from "../../images/s&r.png"
 
-import styles from "../../styles/timeline.css"
+import styles from "../../styles/exhibit.css"
 
 export default function SmeltRefine() {
 
