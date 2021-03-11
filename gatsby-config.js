@@ -47,6 +47,18 @@ module.exports = {
         component: require.resolve(`${__dirname}/src/components/layout`)
       },
     },
-    `gatsby-plugin-transition-link`
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-page-progress`,
+    {
+      resolve: "gatsby-plugin-page-progress",
+        options: {
+          includePaths: ["/", { regex: "^/blog" }],
+          excludePaths: ["/blog/beep-beep-lettuce"],
+          height: 3,
+          prependToBody: false,
+          color: `#663399`,
+          footerHeight: 500,
+        }
+    }
   ]
 }
