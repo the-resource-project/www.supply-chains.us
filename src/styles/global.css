@@ -23,7 +23,7 @@ body {
 }
 
 header, footer {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem 0rem 2rem;
   font-size: 10px; /* need to add calc here */
 }
 
@@ -49,12 +49,12 @@ ul {
 
 /* Links */
 
-a {
+a, button {
   color: #ffffff;
   text-decoration: none;
 }
 
-a:hover {
+a:hover, button:hover {
   transition: width 2s;
   opacity: 0.4;
   transition: opacity .5s ease-in-out;

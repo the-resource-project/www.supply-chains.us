@@ -14,7 +14,7 @@ export default function Intro() {
     <>
     <div className="intro-wrapper">
       <div className="intro-child" >
-        <Fade top delay={1500} fraction={0.9} duration={2000}><h2 className="intro">50 mineral elements are used in 98% of all electronic devices, from consumer cell phones to computers, from  solar panels to electric cars.</h2></Fade>
+        <Fade fraction={0.9} duration={2000}><h2 className="intro">50 mineral elements are used in 98% of all electronic devices, from consumer cell phones to computers, from  solar panels to electric cars.</h2></Fade>
       </div>
       <div className="intro-child">
         <Fade top fraction={1} duration={2000}><h2 className="intro">As we head towards an ever more digital future, we are becoming increasingly dependent on extractive and global processes to support it.</h2></Fade>
@@ -38,7 +38,7 @@ export default function Intro() {
         <Fade top fraction={1} duration={2000}><h2 className="intro">...Reminding us that words like ‘end consumer’ and ‘end product’ are situated, and offer only a partial perspective of consumer technology life cycles.</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={1} duration={2000}><h2 className="intro">They beg the questions: end consumer of what and end product for whom?</h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">They beg the questions: end consumer <i>of what</i> and end product <i>for whom</i>?</h2></Fade>
       </div>
       <div className="intro-child">
         <Fade top fraction={1} duration={2000}><h2 className="intro">supply-chains.us is a living archive that traces these uneven geographies, extractive processes, and forgotten labour involved in the production of our digital life.</h2></Fade>
