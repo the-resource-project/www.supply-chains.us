@@ -10,31 +10,20 @@ html {
   background: linear-gradient(-45deg, #b09554, #b64e34, #547fb0, #54b06d);
   text-align: center;
   width: 100%;
+  min-height: 100%;
 	animation: gradient 10s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 body {
   font-family: avenir next, sans-serif;
-  color: #4a4a4a;
+  color: #ffffff;
   width: 100%;
   margin: auto;
   top: 50%;
 }
 
 header, footer {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem 0rem;
   font-size: 10px; /* need to add calc here */
 }
 
@@ -60,15 +49,27 @@ ul {
 
 /* Links */
 
-a {
-  color: #4a4a4a;
+a, button {
+  color: #ffffff;
   text-decoration: none;
 }
 
-a:hover {
+a:hover, button:hover {
   transition: width 2s;
-  opacity: 0.1;
+  opacity: 0.4;
   transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

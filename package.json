@@ -11,6 +11,7 @@
     "gatsby-plugin-layout": "^2.0.0",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
+    "gatsby-plugin-page-progress": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.4.0",
     "gatsby-plugin-sharp": "^2.8.0",
     "gatsby-plugin-styled-components": "^3.10.0",
@@ -26,7 +27,9 @@
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-spring": "^8.0.27",
+    "stats.js": "^0.17.0",
     "styled-components": "^5.2.1",
+    "three": "^0.126.1",
     "use-sound": "^2.0.1"
   },
   "devDependencies": {

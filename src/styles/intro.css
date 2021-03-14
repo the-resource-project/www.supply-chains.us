@@ -35,3 +35,11 @@
   height: 50%;
   padding: calc(20%);
 }
+
+.intro:hover {
+  transition: width 2s;
+  opacity: 0.1;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
