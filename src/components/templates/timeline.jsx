@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 import Header from "../header"
 import Footer from "../footer"
 
-import styles from "../../styles/timeline.css"
-
 const Layout = props => {
   const {
     pageContext: { Image, Location, Map, Name, Use },

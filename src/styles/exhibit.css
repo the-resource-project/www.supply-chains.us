@@ -5,8 +5,6 @@
  */
 
 img, div {
-   width: $size;
-   height: $size;
  }
 
 .exhibit {
@@ -14,22 +12,52 @@ img, div {
 }
 
 .exhibit-wrapper {
-  min-width: 100rem;
-  height: 100rem;
+  width: 100%;
 }
 
 .exhibit-child {
-  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20rem 0rem;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 10rem;
+  color: #ffffff;
 }
 
 .exhibit-image {
   max-width: 8rem;
 }
 
-.raw-materials {
-  position:fixed;
-  height: 100%;
-  width: 100%;
-  x: 0;
-  y: 0;
+.exhibit-title-link {
+  color: #ffffff;
+  Link {
+    color: #ffffff;
+  }
+}
+
+.top, .bottom {
+  float: top;
+}
+
+.top {
+  background: red;
+  width: 200px;
+  height: 300px;
+  transition: width 1s;
+}
+
+.bottom {
+  background: blue;
+  width: 300px;
+  height: 300px;
+  transition: width 1s;
+}
+
+.top:hover {
+  width: 300px;
+}
+
+.top:hover+.bottom {
+  width: 100px;
 }

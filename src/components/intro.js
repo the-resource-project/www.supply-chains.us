@@ -9,22 +9,6 @@ import Countdown from './countdown'
 import styles from '../styles/intro.css'
 
 export default function Intro() {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { show: false };
-  //   this.handleClick = this.handleClick.bind(this);
-  // }
-  // console.log('inside intro');
-  // const [faded, setFade] = useState(false);
-
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     console.log('inside useEffect');
-  //     window.addEventListener("scroll", () =>
-  //       setFade(window.pageYOffset > 200)
-  //     );
-  //   }
-  // }, []);
 
   return (
     <>
@@ -63,7 +47,7 @@ export default function Intro() {
         <Fade top fraction={1} duration={2000}><h2 className="intro">This project is updated daily, and is best viewed from a desktop computer.</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={1} duration={2000}><h2 className="intro"><Link to="/timeline">Explore the supply chain</Link></h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro"><Link to="/exhibit">Explore the supply chain</Link></h2></Fade>
       </div>
     </div>
     </>
