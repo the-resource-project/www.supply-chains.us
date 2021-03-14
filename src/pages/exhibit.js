@@ -5,7 +5,9 @@ import SEO from "../components/seo"
 
 import Guide from "../components/guide"
 import RawMaterials from "./raw-materials"
-import Transport from "./transport"
+import TransportOne from "./transport-1"
+import Transport2 from "./transport-2"
+import Transport3 from "./transport-3"
 import SmeltRefine from "./smelt-refine"
 import Manufacturing from "./manufacturing"
 import EndProduct from "./end-product"
@@ -28,7 +30,7 @@ const Exhibit = () => (
       style={{
         backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615180503/transport_lzkjbw.png')`
       }}>
-        <h1 className="exhibit-title-link transport-title"><Link to="/transport">Transport & Shipping</Link></h1>
+        <h1 className="exhibit-title-link transport-title"><Link to="/transport-1">Transport & Shipping</Link></h1>
       </div>
 
       <div className="exhibit-child snr-div"
@@ -42,7 +44,7 @@ const Exhibit = () => (
       style={{
         backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615180503/transport_lzkjbw.png')`
       }}>
-        <h1 className="exhibit-title-link transport-title"><Link to="/transport">Transport & Shipping</Link></h1>
+        <h1 className="exhibit-title-link transport-title"><Link to="/transport-2">Transport & Shipping</Link></h1>
       </div>
 
       <div className="exhibit-child manufacturing-div"
@@ -56,7 +58,7 @@ const Exhibit = () => (
       style={{
         backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615180503/transport_lzkjbw.png')`
       }}>
-        <h1 className="exhibit-title-link transport-title"><Link to="/transport">Transport & Shipping</Link></h1>
+        <h1 className="exhibit-title-link transport-title"><Link to="/transport-3">Transport & Shipping</Link></h1>
       </div>
 
       <div className="exhibit-child end-product-div"
@@ -64,13 +66,6 @@ const Exhibit = () => (
         backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615181175/end-product_uusyx7.png')`
       }}>
         <h1 className="exhibit-title-link end-product-title"><Link to="/end-product">End Product</Link></h1>
-      </div>
-
-      <div className="exhibit-child transport-div"
-      style={{
-        backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615180503/transport_lzkjbw.png')`
-      }}>
-        <h1 className="exhibit-title-link transport-title"><Link to="/transport">Transport & Shipping</Link></h1>
       </div>
 
       <div className="exhibit-child recycling-div"

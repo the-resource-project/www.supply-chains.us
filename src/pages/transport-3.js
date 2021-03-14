@@ -2,36 +2,14 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import useSound from 'use-sound'
 
+import HomeButton from "../components/home-button"
 import BackButton from "../components/back-button"
 import ForwardButton from "../components/forward-button"
 
 import ShipAudio from "../components/sounds/ship.mp3"
 import styles from "../styles/exhibit.css"
 
-export default () => (
-  <StaticQuery
-    query={graphql
-      `
-        query AllTransport {
-          allTransportCsv {
-            nodes {
-              Element
-              Image
-              Description__50_100_Words_
-              Media_Type
-              Type
-              Title
-              Source
-            }
-          }
-        }
-      `
-    }
-  render={data => <Transport data={data} />}
-  />
-)
-
-const Transport = ({ data }) => {
+export default function TransportThree () {
   const [play, { stop, isPlaying }] = useSound(ShipAudio);
 
   return (
@@ -40,10 +18,11 @@ const Transport = ({ data }) => {
       backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615180503/transport_lzkjbw.png')`
     }}>
 
-      <Link to="/exhibit"><BackButton /></Link>
+      <HomeButton />
       <h1 class="exhibit-page-title raw-title">Transport & Shipping</h1>
-      <div><button onClick={play}>Boop!</button></div>
-      <ForwardButton />
+
+      <Link to="/manufacturing"><BackButton /></Link>
+      <Link to="/end-product"><ForwardButton /></Link>
     </div>
   )
 
