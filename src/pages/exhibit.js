@@ -18,7 +18,6 @@ const Exhibit = () => (
   <>
     <SEO title="Exhibit" />
     <div className="exhibit-wrapper">
-      <Guide />
       <div className="exhibit-child raw-div"
         style={{
         backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615181142/raw-material_iyuaky.png')`
