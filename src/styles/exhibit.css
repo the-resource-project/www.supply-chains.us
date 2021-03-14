@@ -61,3 +61,7 @@ img, div {
 .top:hover+.bottom {
   width: 100px;
 }
+
+.back-button {
+  max-width: 3rem;
+}

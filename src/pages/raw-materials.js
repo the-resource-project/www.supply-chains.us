@@ -2,6 +2,7 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
 import MiningAudio from "../components/sounds/mining-30.mp3"
+import BackButton from "../components/back-button"
 
 import styles from "../styles/exhibit.css"
 
@@ -34,7 +35,7 @@ const RawMaterials = ({ data }) => (
       style={{
       backgroundImage: `url('https://res.cloudinary.com/aleesteele/image/upload/v1615181142/raw-material_iyuaky.png')`
     }}>
-      <Link to="/exhibit">Go back</Link>
+      <Link to="/exhibit"><BackButton /></Link>
       <h1 class="raw-title">Raw Materials</h1>
     </div>
   </>
