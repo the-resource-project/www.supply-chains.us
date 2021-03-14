@@ -27,6 +27,7 @@
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-spring": "^8.0.27",
+    "stats.js": "^0.17.0",
     "styled-components": "^5.2.1",
     "three": "^0.126.1",
     "use-sound": "^2.0.1"
