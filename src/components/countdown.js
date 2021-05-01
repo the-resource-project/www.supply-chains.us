@@ -6,7 +6,7 @@ import styles from "../styles/layout.css"
 function Countdown() {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    const difference = +new Date(`${year}-04-28`) - +new Date();
+    const difference = +new Date(`${year}-05-05`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
