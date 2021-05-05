@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 
-import Guide from "../components/guide"
 import RawMaterials from "./raw-materials"
 import TransportOne from "./transport-1"
 import Transport2 from "./transport-2"

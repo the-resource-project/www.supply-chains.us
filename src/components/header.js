@@ -23,10 +23,6 @@ const Header = () => {
             {siteTitle}
           </Link>
         </h5>
-        <h6>
-            Time until next update:
-            <Countdown />
-        </h6>
     </header>
     </>
   )

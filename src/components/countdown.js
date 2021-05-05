@@ -45,7 +45,10 @@ function Countdown() {
   });
   return (
     <div>
-      {timerComponents.length ? timerComponents : <span>Explore with us.</span>}<br/><br/>
+    <h6>
+        Time until next update:
+        {timerComponents.length ? timerComponents : <span>Explore with us.</span>}<br/><br/>
+    </h6>
     </div>
   );
 }

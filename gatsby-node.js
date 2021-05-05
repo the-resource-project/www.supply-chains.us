@@ -15,11 +15,22 @@ exports.createPages = ({ graphql, actions }) => {
      query AllElements {
        allElementsCsv {
          nodes {
-           Image
-           Location
-           Map
-           Name
-           Use
+            Name
+            Description
+            Application
+            Extraction
+            Found_in
+            Geopolitics
+            Largest_Company
+            Link_to_other_minerals
+            Main_global_producer
+            Origins
+            Processing
+            R_D
+            Shipping
+            Top_Importer
+            Waste__Recycling__Recovery
+            id
          }
        }
      }
@@ -35,7 +46,7 @@ exports.createPages = ({ graphql, actions }) => {
    result.data.allElementsCsv.nodes.forEach(element => {
      // console.log('inside forEach')
      const slug = element.Name
-     console.log(slug)
+     // console.log(slug)
 
      createPage({
        path: slug,
