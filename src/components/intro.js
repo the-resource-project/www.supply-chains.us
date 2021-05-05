@@ -44,7 +44,7 @@ export default function Intro() {
         <Fade top fraction={1} duration={2000}><h2 className="intro">supply-chains.us is a living archive that traces these uneven geographies, extractive processes, and forgotten labour involved in the production of our digital life.</h2></Fade>
       </div>
       <div className="intro-child">
-        <Fade top fraction={1} duration={2000}><h2 className="intro">This project is updated daily, and is best viewed from a desktop computer.</h2></Fade>
+        <Fade top fraction={1} duration={2000}><h2 className="intro">This project is updated on a regular basis, and is best viewed from a desktop computer.</h2></Fade>
       </div>
       <div className="intro-child">
         <Fade top fraction={1} duration={2000}><h2 className="intro"><Link to="/exhibit">Explore the supply chain</Link></h2></Fade>

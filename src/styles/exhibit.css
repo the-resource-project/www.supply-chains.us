@@ -4,13 +4,6 @@
  *
  */
 
-img, div {
- }
-
-.exhibit {
-  font-size: 11px;
-}
-
 .exhibit-wrapper {
   width: 100%;
 }
@@ -18,15 +11,14 @@ img, div {
 .exhibit-child {
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20rem 0rem;
+  padding: 5rem;
   min-width: 100%;
   min-height: 100%;
-  padding: 10rem 2rem;
   color: #ffffff;
 }
 
-.exhibit-image {
-  max-width: 8rem;
+.exhibit-title-link {
+  font-size: 10rem;
 }
 
 .exhibit-title-link {
@@ -36,32 +28,6 @@ img, div {
   }
 }
 
-.top, .bottom {
-  float: top;
-}
-
-.top {
-  background: red;
-  width: 200px;
-  height: 300px;
-  transition: width 1s;
-}
-
-.bottom {
-  background: blue;
-  width: 300px;
-  height: 300px;
-  transition: width 1s;
-}
-
-.top:hover {
-  width: 300px;
-}
-
-.top:hover+.bottom {
-  width: 100px;
-}
-
-.button {
-  max-width: 3rem;
+.exhibit-button {
+  max-width: 5%;
 }

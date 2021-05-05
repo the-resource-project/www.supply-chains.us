@@ -10,19 +10,18 @@ import styles from "../../styles/element.css"
 
 const Layout = props => {
   const {
-    pageContext: { Image, Location, Map, Name, Use },
+    pageContext: { Name, Description, id },
   } = props
   console.log('in elements.jsx page')
 
   return (
     <>
-      <Header />
       <SEO title="Element List" />
-      <h5><Link to="/element-list/">Go back</Link></h5>
+      <h5><Link to="/raw-materials/">Go back</Link></h5>
       <div className="element-indiv-wrapper">
-        <h1 className="element-indiv-name">{ Name }</h1>
+        <div className="element-indiv-child"><h1 className="element-indiv-name">{ Name }</h1></div>
+        <div className="element-indiv-child"><h3 className="element-indiv-description">{ Description }</h3></div>
       </div>
-      <Footer />
     </>
   )
 }

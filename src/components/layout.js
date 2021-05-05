@@ -15,15 +15,6 @@ import Footer from "../components/footer"
 import styles from "../styles/layout.css"
 
 const Layout = ({ location, children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
 
   console.log('in layout')
   return (

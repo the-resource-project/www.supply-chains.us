@@ -13,13 +13,8 @@ import styles from "../styles/layout.css"
 
 const Footer = () => (
   <footer>
-    © {new Date().getFullYear()}, ALS & MM. Check our sources here.
+    © {new Date().getFullYear()}, ALS & MM. Check our image sources <a href="https://docs.google.com/document/d/1cX0GQGtkAw0wxWU7Rz__dIEi4Z6ylaQoAFhDk3ogt7A/edit?usp=sharing">here</a>.
   </footer>
 )
 
 export default Footer
-
-// <h5><Link to="/element-list/">Go back</Link></h5>
-// © {new Date().getFullYear()}, Built with
-// {` `}
-// <a href="https://www.gatsbyjs.org">Gatsby</a>.

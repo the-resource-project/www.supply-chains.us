@@ -8,10 +8,39 @@
   width: 100%;
 }
 
-.element-list-div-subwrapper {
-
+.element-list-li {
+  padding: 2rem;
 }
 
-.element-list-li {
-  padding: 1rem;
+.exhibit-page-title {
+  font-size: 15rem;
+  padding: 10%;
+}
+
+.element-list-child {
+  font-size: 13rem;
+}
+
+.exhibit-page-text {
+  font-size: 10rem;
+}
+
+.x {
+  animation: x 13s linear infinite alternate;
+}
+
+.y {
+  animation: y 7s linear infinite alternate;
+}
+
+@keyframes x:global {
+  100% {
+    transform: translateX( calc(200px - 100px));
+  }
+}
+
+@keyframes y:global {
+  100% {
+    transform: translateY( calc(200px - 100px));
+  }
 }
