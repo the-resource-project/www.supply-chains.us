@@ -15,22 +15,22 @@ exports.createPages = ({ graphql, actions }) => {
      query AllElements {
        allElementsCsv {
          nodes {
-            Name
-            Description
-            Application
-            Extraction
-            Found_in
-            Geopolitics
-            Largest_Company
-            Link_to_other_minerals
-            Main_global_producer
-            Origins
-            Processing
-            R_D
-            Shipping
-            Top_Importer
-            Waste__Recycling__Recovery
-            id
+           Application
+           Description
+           Extraction
+           Found_In
+           Geopolitics
+           Largest_Company
+           Link_To_Others
+           Main_Global_Producer
+           Name
+           Origins
+           Processing
+           RND
+           Shipping
+           Top_Importer
+           Waste_Recycling_Recovery
+           id
          }
        }
      }
